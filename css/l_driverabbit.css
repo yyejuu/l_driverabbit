@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden; overflow-y: auto;
+}
+
+.link {
+    color: #fff;
+    background-color: #FFB2C8; 
+}
+.link:hover {
+    background-color: #B42B52; color: #fff;
+}
+header {
+    background-color: #FFB2C8;
+    color: #fff;
+}
+header ul.nav li:nth-child(4) {
+    color:  #B42B52; font-weight: bold;
+}
+header ul.nav li:hover {
+    color: #B42B52; 
+}
+section.intro {
+    width: 100%; height: 930px;
+    background-image: url(/img/intro_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+section.intro .car {
+    background-image: url(/img/car_ani.png);
+    width: 296px; height: 187px;
+    position: absolute; left: 0; bottom: 50px;
+    animation: carAni 7s linear infinite;
+}
+@keyframes carAni {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(100vw);}
+}
+section.intro h2 {
+    font-family: "Racing Sans One", sans-serif; color: #000;
+    text-decoration: underline; margin-top: 150px; margin-bottom: 30px;
+}
+section.intro p span {
+    color: #B42B52; font-weight: bold;
+}
+
+section.artwork {
+    width: 100%; height: 1018px;
+    background-image: url(/img/art_bg.png);
+    display: flex; align-items: center; justify-content: center;
+}
+
+section.artwork .inner {
+    width: 654px; height: 620px;
+    margin-bottom: 80px;
+    display: flex; align-items: center; justify-content: space-evenly;
+    flex-direction: column;
+}
+section.artwork h2 {
+    font-size: 60px; margin-top: 0;
+    font-family: "Racing Sans One", sans-serif;
+    text-decoration: underline;
+}
+section.artwork p {
+    font-size: 18px; line-height: 1.4;
+    text-align: center;
+}
+section.artwork p span {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 22px;
+}
+section.artwork .inner .yekki {
+    background-image: url(/img/yekki.png);
+    width: 461px; height: 281px;
+}
+section.artwork ul.col {
+    width: 554px; height: 54px;
+    display: flex; justify-content: space-between;
+}
+section.artwork ul.col li {
+    width: 101px; height: 54px; border-radius: 20px;
+    text-align: center; font-size: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Racing Sans One", sans-serif;
+}
+section.artwork ul.col li#wh {background-color: #fff;}
+section.artwork ul.col li#lp {background-color: #F7D7DC;}
+section.artwork ul.col li#pi {background-color: #FFB684;}
+section.artwork ul.col li#dp {background-color: #E9ADAC;}
+section.artwork ul.col li#hp {background-color: #D4736F;}
+
+section.main {
+    width: 100%; height: 2841px;
+    background-image: url(/img/design_bg.png);
+    background-color: #000;
+}
+section.main h2 {
+    font-size: 73px;
+    width: 493px; height: 101px;
+    position: absolute; left: 714px; top: 140px;
+    font-family: "Racing Sans One", sans-serif; text-decoration: underline;
+    color: #FFB2C8; 
+}
+
+footer {
+    background-color: #FFB2C8;
+}
